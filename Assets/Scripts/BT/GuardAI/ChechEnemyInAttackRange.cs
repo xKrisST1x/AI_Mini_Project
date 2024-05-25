@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ChechEnemyInAttackRange : Node
 {
-    private static int _enemyLayerMask = 1 << 6;
+   // private static int _enemyLayerMask = 1 << 6;
 
     private Transform _transform;
     

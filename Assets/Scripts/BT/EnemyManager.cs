@@ -13,11 +13,11 @@ public class EnemyManager : MonoBehaviour
     {
         _healthpoints -= 10;
         bool isDead = _healthpoints <= 0;
-        if (isDead) _Die();
+        if (isDead) Die();
         return isDead;
     }
 
-    private void _Die()
+    private void Die()
     {
         Destroy(gameObject);
     }
