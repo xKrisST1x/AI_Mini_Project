@@ -40,6 +40,8 @@ public class TaskAttack : Node
             } else
             {
                 _attackCounter = 0f;
+                state = NodeState.SUCCESS;
+                return state;
             }
             
         }
