@@ -17,7 +17,7 @@ public class TaskAttack : Node
 
     public TaskAttack(Transform transform)
     {
-    
+        
     }
 
     public override NodeState Evaluate()
@@ -40,8 +40,6 @@ public class TaskAttack : Node
             } else
             {
                 _attackCounter = 0f;
-                state = NodeState.SUCCESS;
-                return state;
             }
             
         }

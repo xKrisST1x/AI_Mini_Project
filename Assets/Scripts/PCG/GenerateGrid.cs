@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// 1:30 https://www.youtube.com/watch?v=ngjoKWca_Mg&list=PLu2uAkIZ4shpPdCTIjEpvhD8U-RRM3Y2F&index=4&ab_channel=CodingWithRus
 
 public class GenerateGrid : MonoBehaviour
 {
@@ -16,7 +15,7 @@ public class GenerateGrid : MonoBehaviour
 
     private int worldSizeZ = 40;
 
-    private int noiseHeight = 5;
+    private int noiseHeight = 2;
 
     private Vector3 startPosition;
 
@@ -47,7 +46,7 @@ public class GenerateGrid : MonoBehaviour
             }
         }
 
-        //SpawnObject();
+        SpawnObject();
     }
 
     private void Update()
@@ -103,13 +102,13 @@ public class GenerateGrid : MonoBehaviour
         }
     }
 
-    /*private void SpawnObject()
+    private void SpawnObject()
     {
-        for(int c = 0; c < 20; c++)
+        for(int c = 0; c <20; c++)
         {
             GameObject toPlaceObject = Instantiate(objectToSpawn, ObjectSpawnLocation(), Quaternion.identity);
         }
-    }*/
+    }
 
     private int xPlayerLocation
     {
@@ -127,7 +126,7 @@ public class GenerateGrid : MonoBehaviour
         }
     }
 
-    /*private Vector3 ObjectSpawnLocation()
+    private Vector3 ObjectSpawnLocation()
     {
         int rndIndex = Random.Range(0, blockPositions.Count);
 
@@ -136,5 +135,5 @@ public class GenerateGrid : MonoBehaviour
                                   blockPositions[rndIndex].z);
         blockPositions.RemoveAt(rndIndex);
         return newPos;
-    }*/
+    }
 }

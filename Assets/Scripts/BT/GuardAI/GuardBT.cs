@@ -3,13 +3,12 @@ using System.Collections.Generic;
 
 public class GuardBT : Tree1
 {
-    // Kommet til xxxx https://www.youtube.com/watch?v=aR6wt5BlE-E&ab_channel=MinaP%C3%AAcheux
 
     public UnityEngine.Transform[] waypoints;
 
-    public static float speed = 2f;
+    public static float speed = 3f;
     public static float fovRange = 6f;
-    public static float attackRange = 1f;
+    public static float attackRange = 2f;
 
     protected override Node SetupTree()
     {

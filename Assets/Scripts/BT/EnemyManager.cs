@@ -12,6 +12,7 @@ public class EnemyManager : MonoBehaviour
     public bool TakeHit()
     {
         _healthpoints -= 10;
+        Debug.Log("Took damage");
         bool isDead = _healthpoints <= 0;
         if (isDead)
         {
