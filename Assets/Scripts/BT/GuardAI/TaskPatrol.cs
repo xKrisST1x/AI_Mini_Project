@@ -30,7 +30,7 @@ public class TaskPatrol : Node
         }
 
         Transform wp = _waypoints[_currentWaypointIndex];
-        if(Vector3.Distance(_transform.position, wp.position) < 0.01f)
+        if(Vector3.Distance(_transform.position, wp.position) < 1f)
         {
             _transform.position = wp.position;
             _waitCounter = 0f;
